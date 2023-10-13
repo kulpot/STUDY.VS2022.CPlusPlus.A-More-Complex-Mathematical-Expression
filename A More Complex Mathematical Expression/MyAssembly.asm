@@ -14,9 +14,14 @@ doit proc
 
 	; 7 + 2 * 8 - 8 / 5
 	
+	mov eax, 2
+	mov ebx, 8
+	mul ebx
 	
 	
 	
+	
+	ret
 	
 	
 	
