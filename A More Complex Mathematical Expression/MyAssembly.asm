@@ -9,15 +9,26 @@
 doit proc
 
 	; this is a comment i can type whatever i like after a semicolon and assembler will ignore it
+	
+	; ----A More Complex Mathematical Expression ----
+
+	; 7 + 2 * 8 - 8 / 5
+	
+	
+	
+	
+	
+	
+	
 	; 9 / 2
 
 	; ----Dividing Large Numbers---
 
-	mov eax, 0FFFFFFFFh	; largest 64bit value
-	mov edx, 0FFFFFFFFh
-	mov ebx, 2
-	div ebx
-	ret
+	;mov eax, 0FFFFFFFFh	; largest 64bit value
+	;mov edx, 0FFFFFFFFh
+	;mov ebx, 2
+	;div ebx
+	;ret
 	;error - integer overflow - result is too large must be less than 32bit
 
 
