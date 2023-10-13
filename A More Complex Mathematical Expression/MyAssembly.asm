@@ -23,7 +23,8 @@ doit proc
 	div ebx			; (eax8 / ebx5)result 1 in eax, remainder 3 in edx
 	; 7 + 16 - 1
 	mov ebx, 7
-	add ebx, ecx	; (ebx7 + ecx16)result 23
+	add ebx, ecx	; (ebx7 + ecx16)result 23 in ebx
+	; 23 - 1
 	
 	
 	
