@@ -16,12 +16,14 @@ doit proc
 	
 	mov eax, 2
 	mov ebx, 8
-	mul ebx			; result 16 in eax
+	mul ebx			; (eax2 + ebx8)result 16 in eax
 	mov ecx, eax	; copy eax16 to ecx
 	mov eax, 8		; change eax2 to eax8
 	mov ebx, 5		; change ebx8 to ebx5
-	div ebx
-	
+	div ebx			; (eax8 / ebx5)result 1 in eax, remainder 3 in edx
+	; 7 + 16 - 1
+	mov ebx, 7
+	add ebx, ecx	; (ebx7 + ecx16)result 23
 	
 	
 	
