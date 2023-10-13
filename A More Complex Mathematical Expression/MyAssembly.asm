@@ -14,17 +14,18 @@ doit proc
 
 	; 7 + 2 * 8 - 8 / 5
 	
-	mov eax, 2
-	mov ebx, 8
-	mul ebx			; (eax2 + ebx8)result 16 in eax
-	mov ecx, eax	; copy eax16 to ecx
-	mov eax, 8		; change eax2 to eax8
-	mov ebx, 5		; change ebx8 to ebx5
-	div ebx			; (eax8 / ebx5)result 1 in eax, remainder 3 in edx
+	mov eax, 2		; eax 00000002
+	mov ebx, 8		; ebx 00000008
+	mul ebx			; (eax2 + ebx8)result 16decimal in eax hexadecimal00000010
+	mov ecx, eax	; copy eax16 to ecx hexadecimal00000010
+	mov eax, 8		; change eax2 to eax8 00000008
+	mov ebx, 5		; change ebx8 to ebx5 00000005
+	div ebx			; (eax8 / ebx5)result 1 in eax 00000001, remainder 3 in edx 00000003
 	; 7 + 16 - 1
-	mov ebx, 7
-	add ebx, ecx	; (ebx7 + ecx16)result 23 in ebx
+	mov ebx, 7		; ebx 00000007
+	add ebx, ecx	; (ebx7 + ecx16)result decimal23 in ebx hexadecimal00000017
 	; 23 - 1
+	sub ebx, eax	; (ebx23 - eax1)result decimal22 in ebx hexadecimal00000016
 	
 	
 	
